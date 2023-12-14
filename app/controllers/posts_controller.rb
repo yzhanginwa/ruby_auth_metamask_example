@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  skip_before_action :login_required, only: [:index]
   before_action :set_post, only: %i[ show edit update destroy ]
 
   # GET /posts or /posts.json
