@@ -52,7 +52,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
 end
 
-gem "ruby_auth_metamask", "~>0.1.0"
+gem "ruby_auth_metamask", "~>0.2.1"
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
