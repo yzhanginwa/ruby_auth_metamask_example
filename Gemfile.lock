@@ -197,7 +197,7 @@ GEM
       io-console (~> 0.5)
     rexml (3.2.6)
     ruby2_keywords (0.0.5)
-    ruby_auth_metamask (0.2.1)
+    ruby_auth_metamask (0.2.2)
       ecdsa
       keccak
       rails (>= 7.1.2)
@@ -253,7 +253,7 @@ DEPENDENCIES
   jbuilder
   puma (>= 5.0)
   rails (~> 7.1.2)
-  ruby_auth_metamask (~> 0.2.1)
+  ruby_auth_metamask (~> 0.2.2)
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
