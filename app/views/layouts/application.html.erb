@@ -12,7 +12,28 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <main class="container mx-auto mt-2 px-5">
+      <div class="w-full">
+        <div class="flex flex-row p-3 bg-gray-100 mb-2">
+          <div class="mr-6 py-1">
+            <a class="text-blue-500 hover:text-blue-800" href="/posts">Posts</a>
+          </div>
+          <div class="mr-6 py-1">
+            <a class="text-blue-500 hover:text-blue-800" href="/posts/new">New post</a>
+          </div>
+          <div class="mr-1 ml-auto">
+            <% if current_user %>
+              <form method="post" action="/signout">
+                <button type="submit" class="text-blue-500 hover:text-blue-800 px-4 py-1 border rounded border-blue-600 hover:border-transparent" href="">Sign Out</button>
+              </form>
+            <% else %>
+              <form method="get" action="/signin">
+                <button class="text-blue-500 hover:text-blue-800 px-4 py-1 border rounded border-blue-600 hover:border-transparent" href="/signin">Sign In</button>
+              </form>
+            <% end %>
+          </div>
+        </div>
+      </div>
       <%= yield %>
     </main>
   </body>
